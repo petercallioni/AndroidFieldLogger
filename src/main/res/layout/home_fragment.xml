@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hp1"
+            android:id="@+id/hp1Button"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="clickField"
+            android:tag="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hp2"
+            android:id="@+id/hp2Button"
+            android:layout_below="@+id/hp1Button"
+            android:layout_centerHorizontal="true"
+            android:onClick="clickField"
+            android:tag="2"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fo"
+            android:id="@+id/foButton"
+            android:layout_below="@+id/hp2Button"
+            android:layout_alignRight="@+id/hp2Button"
+            android:layout_alignEnd="@+id/hp2Button"
+            android:onClick="clickField"
+            android:tag="3"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mz"
+            android:id="@+id/mzButton"
+            android:layout_below="@+id/foButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="clickField"
+            android:tag="4"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/control"
+            android:id="@+id/controlButton"
+            android:layout_below="@+id/mzButton"
+            android:layout_centerHorizontal="true"
+            android:tag="5"
+            android:onClick="clickField"/>
+
+        <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/previous"
+                android:id="@+id/prevButton"
+                android:layout_weight="1"
+                android:onClick="clickPrevious"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:id="@+id/nextButton"
+                android:layout_weight="1"
+                android:onClick="clickNext"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:id="@+id/homeButton"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
